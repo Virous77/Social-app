@@ -1,0 +1,167 @@
+.masnory {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin: 0 1rem;
+}
+
+@media (max-width: 1200px) {
+  .masnory {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 920px) {
+  .masnory {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .masnory {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .masnory {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pinImage {
+  position: relative;
+  cursor: pointer;
+  background-color: gainsboro;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.pinImage img {
+  width: 100%;
+  height: 320px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.allButton {
+  position: relative;
+}
+
+.save {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 1.2rem;
+  padding: 0px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  background-color: rgba(238, 8, 8, 0.714);
+}
+
+.save button {
+  border: none;
+  color: white;
+  background-color: transparent;
+  padding: 5px 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cloud,
+.delete,
+.arrow {
+  position: absolute;
+  background-color: rgba(200, 198, 198, 0.714);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  display: none;
+  cursor: pointer;
+}
+
+.arrow {
+  bottom: 4%;
+  left: 22%;
+  font-size: 0.9rem;
+}
+
+.cloud {
+  top: 3%;
+  left: 3%;
+}
+
+.cloud a {
+  color: black;
+}
+
+.arrow a {
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: bold;
+  padding: 7px 4px;
+}
+
+.cloudIcon {
+  color: black;
+  display: flex;
+}
+
+.arrowIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete {
+  bottom: 4%;
+  right: 3%;
+}
+
+.save:active,
+.cloud:active,
+.delete:active,
+.arrow:active {
+  scale: 0.95;
+}
+
+.pinImage:hover .arrow,
+.pinImage:hover .delete,
+.pinImage:hover .cloud,
+.pinImage:hover .save {
+  display: flex;
+}
+
+.user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: gainsboro;
+  margin-top: -0.3rem;
+  padding: 6px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.userPostImage img {
+  width: 3rem;
+  border-radius: 100px;
+  display: flex;
+}
+
+.userPostName h2 {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1.2rem;
+}

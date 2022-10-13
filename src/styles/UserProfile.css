@@ -1,0 +1,93 @@
+.userProfileBar {
+  margin-top: 9rem;
+}
+
+.userBanner {
+  width: 100%;
+  position: relative;
+}
+
+.userBanner img {
+  width: 100%;
+  height: 300px;
+}
+
+.userHomeProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.userHomeProfile img {
+  margin-top: -3.5rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100px;
+  border: 3px solid rgb(227, 226, 226);
+}
+
+.userHomeProfile h2 {
+  margin-top: 0.3rem;
+}
+
+.userLogout button {
+  background-color: black;
+  padding: 7px 2rem;
+  border: none;
+  border: 2px solid white;
+  position: absolute;
+  top: 16%;
+  right: 4%;
+  cursor: pointer;
+}
+
+.userLogoutIcon {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.userLogout button:hover {
+  background-color: white;
+  border: 2px solid black;
+}
+
+.userLogout button:hover .userLogoutIcon {
+  color: black;
+}
+
+.userLogout button:active {
+  scale: 0.95;
+}
+
+.userHomeButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.nonActiveButton {
+  background-color: white;
+  color: black;
+  padding: 7px 2rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.activeButton {
+  background-color: rgb(74, 74, 250);
+  color: white;
+  padding: 7px 2rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.displayUserPin {
+  margin-top: 2rem;
+}

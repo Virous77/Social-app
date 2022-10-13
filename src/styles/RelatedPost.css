@@ -1,0 +1,28 @@
+.relatedPostBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.relatedHead {
+  text-align: center;
+}
+
+.relatedHead h1 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 920px) {
+  .relatedPostBar {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .relatedPostBar {
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+}

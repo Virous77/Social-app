@@ -1,0 +1,23 @@
+.feedBar {
+  margin-top: 12rem;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 18rem;
+}
+
+.empty img {
+  width: 30rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .empty img {
+    width: 100%;
+  }
+
+  .empty {
+    padding: 1rem;
+  }
+}

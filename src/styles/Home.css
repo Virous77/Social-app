@@ -1,0 +1,16 @@
+.contentBar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  /* overflow-y: scroll; */
+  /* height: 100vh; */
+  padding-bottom: 1rem;
+}
+
+.content::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}

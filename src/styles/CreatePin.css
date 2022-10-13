@@ -1,0 +1,239 @@
+.pinBar {
+  margin: 1rem;
+  margin-top: 13rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.userPostActive {
+  padding: 1rem;
+  height: fit-content;
+  position: fixed;
+  top: 30%;
+  left: 10%;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
+.userPostActive img {
+  width: 5rem;
+  border-radius: 100px;
+}
+
+.userPostActive h2 {
+  color: rgb(89, 89, 251);
+}
+
+.formBar {
+  border: 2px solid black;
+  padding: 4rem;
+  width: 500px;
+}
+
+.formBar form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pinTitle,
+.pinAbout,
+.pinDestination {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.pinTitle input,
+.pinAbout input,
+.pinDestination input {
+  border: none;
+  outline: none;
+  padding: 15px 5px;
+  font-size: 1rem;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.titleIcon,
+.aboutIcon,
+.destinationIcon {
+  font-size: 1.3rem;
+}
+
+.pinCreateImage {
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+}
+
+.pinCreateImage input {
+  width: 100%;
+}
+
+.pinCreateImage input[type="file"] {
+  width: 100%;
+  height: 150px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.cloudPin {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.linePin {
+  width: 100%;
+  height: 23px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.pinCreateImage p {
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  cursor: pointer;
+}
+
+.pinCreateImage span {
+  position: absolute;
+  z-index: 50;
+  top: 47%;
+  left: 25%;
+}
+
+option {
+  text-transform: capitalize;
+}
+
+.viewMsg {
+  width: 240px;
+  height: 240px;
+  border-radius: 10px;
+}
+
+.uploadedImage {
+  position: relative;
+}
+
+.uploadedImage button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+}
+
+.deleteUploadImage {
+  font-size: 2rem;
+  color: red;
+  cursor: pointer;
+}
+
+.deleteUploadImage:active {
+  scale: 0.9;
+}
+
+.categoryHead {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  margin-top: 1rem;
+}
+
+.pinCategory select {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  padding-left: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.submitButton {
+  width: 100%;
+}
+
+.submitButton button {
+  width: 100%;
+  background-color: rgb(18, 18, 169);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 1100px) {
+  .userPostActive {
+    left: 2%;
+  }
+}
+
+@media (max-width: 920px) {
+  .formBar {
+    width: 400px;
+    padding: 2rem;
+    margin-left: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pinBar {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: auto;
+    margin-top: 9rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .userPostActive {
+    position: unset;
+    text-align: center;
+    display: flex;
+
+    align-items: center;
+  }
+
+  .formBar {
+    margin-left: 0;
+    width: 100%;
+    margin: auto;
+    border: none;
+  }
+
+  .pinBar img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pinBar {
+    margin-top: 12rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .formBar {
+    width: 100%;
+  }
+}

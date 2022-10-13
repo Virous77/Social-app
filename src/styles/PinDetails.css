@@ -1,0 +1,207 @@
+.pinDetailsBar {
+  margin-top: 11rem;
+  display: grid;
+  grid-template-columns: 370px 1fr;
+  padding: 2rem 10rem;
+  gap: 2rem;
+}
+
+.pinDetailImg {
+  position: relative;
+  width: 100%;
+  justify-self: center;
+  background-color: aqua;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.pinDetailImg img {
+  width: 100%;
+  border-radius: 10px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.pinDetailShare {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pinDetailShare a,
+.downloadPin a {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.downloadPin {
+  padding: 5px 10px;
+}
+
+.pinImgLinks {
+  position: absolute;
+  left: 11%;
+  bottom: 4%;
+  border-radius: 5px;
+  background-color: rgba(215, 212, 212, 0.8);
+}
+
+.viewMode {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+}
+
+.viewIcon {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: blue;
+}
+
+.pinDeatilsInfo {
+  width: 85%;
+}
+
+.pinDetailTitleHead h1 {
+  font-size: 1.5rem;
+}
+
+.pinDetailTitleHead p {
+  font-size: 0.9rem;
+  margin-left: 3px;
+}
+
+.pinPostedUser {
+  margin-top: 1rem;
+}
+
+.pinPostedUser a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+
+.pinPostedUser a img {
+  border-radius: 100px;
+  width: 3rem;
+}
+
+.pinPostedUser a h2 {
+  color: black;
+  text-transform: capitalize;
+}
+
+.commentPin {
+  margin-top: 1rem;
+}
+
+.commentPin h3 {
+  padding-bottom: 0.5rem;
+}
+
+.commentSection {
+  height: 200px;
+  overflow: scroll;
+  width: 100%;
+}
+
+.commentSection::-webkit-scrollbar {
+  width: 0;
+  opacity: 0;
+}
+
+.commentUserProfile img {
+  width: 2rem;
+  border-radius: 100px;
+  display: flex;
+}
+
+.commentsList {
+  list-style: none;
+  margin-bottom: 1rem;
+  margin-top: 0.3rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.commentWrite {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(247, 243, 243);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.commentWrite a img {
+  width: 2rem;
+  border-radius: 100px;
+  display: flex;
+}
+
+.commentWrite form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.commentWrite form input {
+  width: 100%;
+  outline: none;
+  padding: 12px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.commentWrite form button {
+  padding: 10px 20px;
+  background-color: rgb(46, 46, 246);
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.sendPinIcon {
+  font-size: 1.1rem;
+  color: white;
+}
+
+@media (max-width: 1160px) {
+  .pinDeatilsInfo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1060px) {
+  .pinDetailsBar {
+    margin-top: 12rem;
+    padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .pinDetailsBar {
+    margin-top: 12rem;
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pinDetailsBar {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    margin-top: 10rem;
+  }
+}

@@ -1,0 +1,95 @@
+.loginSection {
+  margin: auto;
+  height: 100vh;
+  background-image: url("../Images/hero.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginBar {
+  width: 400px;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mainIcon {
+  font-size: 5rem;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+}
+
+.loginButton {
+  text-align: center;
+  width: 100%;
+}
+
+.loginButton button {
+  padding: 12px 3rem;
+  border: none;
+  background-color: rgb(79, 79, 252);
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  margin: auto;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.loginButton button span {
+  display: flex;
+}
+
+.loginButton button:hover {
+  background-color: rgb(60, 60, 252);
+}
+
+.aboutPage {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  background-color: white;
+  padding: 10px 2rem;
+  cursor: pointer;
+  transition: ease 1s;
+}
+
+.aboutPage a {
+  color: black;
+}
+
+.aboutPage:hover {
+  background-color: rgb(217, 216, 216);
+}
+
+.aboutPage:active {
+  scale: 0.9;
+}
+
+@media (max-width: 620px) {
+  .loginBar {
+    width: 100%;
+    margin: 1rem;
+  }
+}
